@@ -1,0 +1,40 @@
+<body>
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-12 col-md colBox d-flex justify-content-center align-items-center">
+              <div class="calc">
+                  <div class="calc-input">
+                      <input [value]="total" id="input1" class="form-control text-end text-white display" type="text" placeholder="0">
+                      <p id="save" class="text-end text-white">{{number}}</p>
+                  </div>
+                  <div class="fila">
+                      <button #button type="button" id="btn1" class="btn btn-dark boton" name="1" value="1" (click)="element('1')">1</button>
+                      <button #button type="button" id="btn2" class="btn btn-dark boton" name="2" value="2" (click)="element('2')">2</button>
+                      <button #button type="button" id="btn3" class="btn btn-dark boton" name="3" value="3" (click)="element('3')">3</button>
+                      <button #button type="button" id="btn+" class="btn btn-secondary boton ope" name="+" value="+" (click)="element('+')">+</button>
+                  </div>
+                  <div class="fila">
+                      <button #button type="button" id="btn4" class="btn btn-dark boton" name="4" value="4" (click)="element('4')">4</button>
+                      <button #button type="button" id="btn5" class="btn btn-dark boton" name="5" value="5" (click)="element('5')">5</button>
+                      <button #button type="button" id="btn6" class="btn btn-dark boton" name="6" value="6" (click)="element('6')">6</button>
+                      <button #button type="button" id="btn-" class="btn btn-secondary boton  ope" name="-" value="-" (click)="element('-')">-</button>
+                  </div>
+                  <div class="fila">
+                      <button #button type="button" id="btn7" class="btn btn-dark boton" name="7" value="7" (click)="element('7')">7</button>
+                      <button #button type="button" id="btn8" class="btn btn-dark boton" name="8" value="8" (click)="element('8')">8</button>
+                      <button #button type="button" id="btn9" class="btn btn-dark boton" name="9" value="9" (click)="element('9')">9</button>
+                      <button #button type="button" id="btn*" class="btn btn-secondary boton  ope" name="*" value="*" (click)="element('*')">*</button>
+                  </div>
+                  <div class="fila">
+                      <button #button type="button" id="btn0" class="btn btn-dark boton boton1" name="0" value="0" (click)="element('0')">0</button>
+                      <button #button type="button" id="btn." class="btn btn-dark boton" name="." value="." (click)="element('.')">.</button>
+                      <button #button type="button" id="btn/" class="btn btn-secondary boton  ope" value="/" name="/" (click)="element('/')">/</button>
+                  </div>
+                  <div class="fila">
+                      <button type="button" id="btnc" class="btn btn-primary boton boton1 blue" name="C" value="C" (click)="clearSave()">C</button>
+                      <button type="button" id="btn=" class="btn btn-danger boton boton1 red" name="=" value="=" (click)="resolve()">=</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
